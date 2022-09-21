@@ -1,24 +1,20 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 class Veiculo {
-	private:
-		int ano;
-		float valor;
-		string modelo;
-	public:
-		//Construtor
-		Veiculo();
+    private:
+        string cor, modelo, ano;
 
-		//Getters
-		int getAno();
-		float getValor();
-		string getModelo();
+    public:
+        Veiculo();
+        Veiculo(string, string, string);
+        
+        void setCor(string cor);
+        void setModelo(string modelo);
+        void setAno(string ano);
 
-		//Setters
-		void setAno(int ano);
-		void setValor(float valor);
-		void setModelo(string modelo);
-}
+        string getCor();
+        string getModelo();
+        string getAno();
+};
